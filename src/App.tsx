@@ -219,7 +219,6 @@ function App() {
       </p>
 
       <div className="h-12">
-        {!isLoading && (
           <button
             onClick={login}
             className="px-4 border-2 border-[#b45f63] rounded-lg"
@@ -228,7 +227,6 @@ function App() {
               Login
             </p>
           </button>
-        )}
       </div>
     </div>
   );
