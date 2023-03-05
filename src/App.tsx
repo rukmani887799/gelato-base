@@ -218,7 +218,7 @@ function App() {
         Number Increment in Gasless Transactions on Base by Coinbase
       </p>
       <p>Powered by Base and Gelato</p>
-      {isLoading && (<h2>Loading ...... the wallet Please Wait</h2>)}
+      {isLoading && (<h2 className="text-3xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-[#b45f63] to-[#f5c3a6]">Loading ...... the wallet Please Wait</h2>)}
       <div className="h-12">
         {!isLoading && (
           <button
