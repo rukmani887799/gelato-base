@@ -217,8 +217,9 @@ function App() {
       <p className="text-6xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-[#b45f63] to-[#f5c3a6]">
         Number Increment in Gasless Transactions on Base by Coinbase
       </p>
-
+      {isLoading && (<h3>Loading the wallet Please Wait</h3>)}
       <div className="h-12">
+        {!isLoading && (
           <button
             onClick={login}
             className="px-4 border-2 border-[#b45f63] rounded-lg"
@@ -227,6 +228,7 @@ function App() {
               Login
             </p>
           </button>
+        )}
       </div>
     </div>
   );
